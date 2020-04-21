@@ -1,0 +1,110 @@
+header {
+  background-color: #33ccff;
+  height: 60px;
+  width: 1340px;
+}
+footer {
+  background-color: #000000;
+  height: 100px;
+  width: 1400px;
+}
+.title {
+  color: rgb(255, 255, 255);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+.footer {
+  color: rgb(255, 255, 255);
+  padding-left: 150px;
+  padding-top: 20px;
+  font-family: monospace;
+}
+.footer1 {
+  color: rgb(255, 255, 255);
+  padding-left: 150px;
+  padding-top: 0px;
+  font-family: monospace;
+}
+.intromaster {
+  padding-top: 30px;
+  padding-left: 50px;
+  font-size: 65px;
+  font-family: monospace;
+}
+.intro {
+  margin-top: 0px;
+  padding-left: 50px;
+  font-size: 65px;
+  font-family: monospace;
+}
+.name {
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+  margin-left: 400px;
+  margin-top: 75px;
+  text-align: center;
+}
+.password {
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+  margin-left: 580px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.logIn {
+  margin-top: 20px;
+  margin-left: 835px;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.JoinUs {
+  margin-left: 700px;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.SignIn {
+  margin-left: 20px;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+
+/''orignal 75 pixel for font size of intromaster and intro
+original 75 pixel for margin top of password
+original 50px for margin left for password
+
+draw = function {
+fill(255, 0, 0)
+var x = 500;
+var y = 500;
+rect(1000, 1000, 500, 500);
+}
+
+
+function draw()
+  {
+var canvas = document.getElementById('circle');
+if (canvas.getContext)
+{
+var ctx = canvas.getContext('2d');
+var X = canvas.width / 2;
+var Y = canvas.height / 2;
+var R = 45;
+ctx.beginPath();
+ctx.arc(X, Y, R, 0, 2 * Math.PI, false);
+ctx.lineWidth = 3;
+ctx.strokeStyle = '#FF0000';
+ctx.stroke();
+}
+}
+
+<canvas id="circle" width="400" height="400"></canvas>
